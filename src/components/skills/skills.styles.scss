@@ -1,0 +1,24 @@
+@import '../../assets/colors.scss';
+
+.skills-container {
+    width: 350px;
+    height: 100%;
+    padding: 5px;
+    font-size: 15px;
+    margin: 5px;
+
+    th td {
+        width: 20%;
+        
+    }
+    .first-column {
+        text-align: left;
+        width: 55%;
+
+        .first-input {
+            text-align: left;
+        }
+    }
+
+}
+

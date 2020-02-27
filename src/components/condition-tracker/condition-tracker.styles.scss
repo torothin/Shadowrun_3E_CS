@@ -1,0 +1,116 @@
+@import "../../assets/colors.scss";
+.component-container {
+    //background-color: $secondary-color;
+    //border: black 1px solid;
+    
+    .condition-container {
+        padding: 5px;
+        margin: 5px;
+        //display: block;
+        //position: relative;
+        z-index: 1;
+        margin: auto;
+        
+    }
+
+    .background-image {
+        content: "";
+        opacity: 0.75;
+        top: 0px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: relative;
+        z-index: 0;   
+        margin: 5px;
+        
+    }
+
+    .stun {
+        @extend .condition-container;
+        @extend .background-image;
+        background: url('../../assets/stun_condition_monitor_alpha_whitetext.png');
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: contain;
+        
+    }
+
+    .physical {
+        @extend .condition-container;
+        @extend .background-image;
+        background: url('../../assets/physical_condition_monitor_alpha_whitetext.png');
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: contain;
+    }
+
+    .wrapper {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        z-index: 1; 
+        display: flex;
+        cursor: pointer;
+    }
+
+    .container-large {
+        min-width: 350px;
+        width: 350px;
+        height: 80px;
+        margin: auto;
+    }
+
+    .container-small {
+        min-width: 200px;
+        width: 200px;
+        height: 40px;
+        margin: auto;
+        
+    }
+
+    .physical-wrapper-large {
+        @extend .wrapper;
+        top: 7px;
+        left: 4px; 
+    }
+
+    .stun-wrapper-large { 
+        @extend .wrapper;  
+        top: 41px;
+        left: 0px; 
+    }   
+
+    .physical-wrapper-small {
+        @extend .wrapper;
+        top: 0px;
+        left: 0px; 
+    }
+
+    .stun-wrapper-small {
+        @extend .wrapper;
+        top: 27px;
+        left: 8px; 
+    }
+
+    .checkbox-large {
+        height: 32px;
+        width: 34.4px;
+        //background-color: green;
+        opacity: 0.5;
+        
+    }
+    .checkbox-small {
+        height: 19px;
+        width: 20px;
+        //background-color: green;
+        opacity: 0.5;
+        
+    }
+    .checked {
+        background-color: red;
+        opacity: 0.5;
+    }
+    
+}
+

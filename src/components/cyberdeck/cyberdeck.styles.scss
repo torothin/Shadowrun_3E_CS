@@ -1,0 +1,27 @@
+@import "../../assets/colors.scss";
+
+.cyberdeck-container {
+    width: 350px;
+    height: 100%;
+    padding: 5px;
+    font-size: 15px;
+    margin: 5px;
+    padding-top: 10px;
+    
+    .cyberdeck-condition-monitor {
+        background-color: $secondary-color;
+        margin: auto;
+    }
+
+    .cyberdeck-text-area {
+        margin: auto;
+        width: 100%;
+
+        .cyberdeck-text {
+            width: 90%;
+            height: 25px;
+            margin: auto;
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+@import "../../assets/colors.scss";
+
+.astral-data-container {
+    width: 235px;
+    height: 100%;
+    padding: 5px;
+    font-size: 15px;
+    margin: 5px;
+    
+    .first-column {
+        text-align: left;
+        width: 45%;
+
+        .first-input {
+            text-align: left;
+            width: 100px;
+            padding-left: 5px;
+        }
+    }
+    .last-column {
+        text-align: left;
+        width: 65px;
+    }
+
+    
+}

@@ -1,0 +1,154 @@
+@import './assets/colors.scss';
+
+.App {
+  text-align: center;
+  background-color: $extra-color;
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  min-width: 545px;
+  height: 100%;
+  align-items: flex-start;
+}
+
+h3 {
+   margin: 5px auto;
+}
+
+input {
+  outline: none;
+  background: none;
+  border: none;
+  height: 23px;
+  font-size: 18px;
+  margin: 1px;
+  padding: 5px;
+  width: 70px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+.mock-input {
+  outline: none;
+  background-color: $extra-color;
+  border: none;
+  height: 23px;
+  font-size: 18px;
+  margin: 1px;
+  width: 70px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
+
+div { 
+  outline-style: none;
+}
+
+button { 
+  outline-style: none;
+}
+
+.smaller-input {
+    font-size: 15px;
+    text-align: center;
+    height: 20px;
+    width: 100%;
+}
+
+.mock-smaller-input {
+  font-size: 15px;
+  text-align: center;
+  height: 20px;
+  width: 100%;
+  background-color: $extra-color;
+}
+
+.smallest-input {
+  font-size: 12px;
+  text-align: center;
+  height: 15px;
+  width: 100%;
+}
+
+.mock-smallest-input {
+  font-size: 12px;
+  text-align: center;
+  height: 15px;
+  width: 100%;
+  background-color: $extra-color;
+}
+
+textarea {
+  outline: none;
+  overflow: auto;
+  resize: vertical;
+  border: none;
+  padding-top: 3px;
+  padding-bottom: 0px
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.menu-btn {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 12;
+  border-radius: 10px;
+  border: white solid 1px;
+  padding: 2px;
+  
+  background: url('./assets/menu_icon_white.png');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 85%;
+  background-color: $secondary-color;
+  
+}
+
+.table-styling {
+
+  padding-bottom: 15px;
+  
+  .first-column {
+    text-align: left;
+    min-width: 170px;
+   
+  }
+
+  .first-input {
+      text-align: left;
+      
+  }
+  
+  .large-width {
+    width: 260px;
+    min-width: 130px;
+    
+  }
+
+  .minimized-width {
+    width: 10px;
+    min-width: 10px;
+  }
+
+  .small-width {
+    width: 120px;
+    min-width: 60px;
+    
+  }
+}
+

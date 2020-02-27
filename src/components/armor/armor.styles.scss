@@ -1,0 +1,17 @@
+.armor-container {
+    width: 350px;
+    height: 100%;
+    padding: 5px;
+    font-size: 15px;
+    margin: 5px;
+
+    .first-column {
+        text-align: left;
+        width: 60%;
+
+        .first-input {
+            text-align: left;
+        }
+    }
+}
+

@@ -1,0 +1,19 @@
+.karma-container {
+    width: 100px;
+    height: 100%;
+    padding: 5px;
+    font-size: 15px;
+    margin: 5px;
+    
+    .pool-container {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        
+        input {
+            height: 50px;
+            font-size: 20px;
+            width: 100%;
+        }
+    }
+}

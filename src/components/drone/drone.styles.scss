@@ -1,0 +1,58 @@
+@import "../../assets/colors.scss";
+
+.drone-container {
+    width: 220px;
+    //border: $extra-color 3px solid;
+    margin: 5px;
+    font-size: 10px;
+    height: 100%;
+    padding-top: 10px;
+    background-color: $secondary-color;
+
+    .stat-table {
+        position: relative;
+        top: 0px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+
+        table {
+            margin: 0 auto;
+        }
+
+        .drone-input {
+            font-size: 10px;
+            height: 12px;
+            width: 50px;
+            padding: 1px;
+        }
+    }
+
+    .condition-monitor {
+        // position: relative;
+        // top: 0px;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        // z-index: 0;
+    }
+
+    .drone-text {
+        width: 90%;
+        height: 15px;
+        margin: 1px auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+            
+
+            
+    

@@ -1,0 +1,546 @@
+import React from 'react'
+import TextareaAutosize from 'react-textarea-autosize';
+import ConditionTracker from '../condition-tracker/condition-tracker.component';
+
+import './modded-vehicle.styles.scss';
+
+const ModdedVehicle = (props) => {
+    const handleChange = (e) => {
+        const type = e.target.name;
+        const input = e.target.value;
+        props.onChange(type, input, "moddedVehicle");
+    }
+
+    const {vehicleName,model,chassis,pointValue,speed,maxSpeed,acceleration,handling,
+        body,armor,signature,navPilot,seating,entryPoints,firmPoints,hardPoints,
+        cargo,load,stress,fuelType,fuelCapacity,currentFuel,econ,idle,
+        ltProfile,setupTime,cost,maintenance,optempo,sensors,ecm,eccm,ed,ecd,
+        mods,weapons,notes} = props.moddedVehicle;
+
+    return (
+        <div className="modded-vehicle-container component-container-color" style={{order: `${props.style}`}}>
+            <h3>Modded Vehicle</h3>
+            <div className="subcomponent-container subcomponent-color">
+            <div className="stat-table">
+                <table>
+                    <thead></thead>
+                    <tbody>
+
+                    {/* 1-4 */}
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={vehicleName} 
+                                name="vehicleName" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Model</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={model} 
+                                name="model" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Chassis</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={chassis} 
+                                name="chassis" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Point Value</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={pointValue} 
+                                name="pointValue" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                    </tr>
+                    {/* 5-8 */}
+                    <tr>
+                        <td>Speed</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={speed} 
+                                name="speed" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Max Speed</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={maxSpeed} 
+                                name="maxSpeed" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Acceleration</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={acceleration} 
+                                name="acceleration" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Handling</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={handling} 
+                                name="handling" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                    </tr>
+
+                    {/* 9-12 */}
+                    <tr>
+                        <td>Body</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={body} 
+                                name="body" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Armor</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={armor} 
+                                name="armor" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Signature</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={signature} 
+                                name="signature" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Nav/Pilot</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={navPilot} 
+                                name="navPilot" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                    </tr>
+
+                    {/* 13-16 */}
+                    <tr>
+                        <td>Seating</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={seating} 
+                                name="seating" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Entry Points</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={entryPoints} 
+                                name="entryPoints" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Firm Points</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={firmPoints} 
+                                name="firmPoints" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Hard Points</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={hardPoints} 
+                                name="hardPoints" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                    </tr>
+                    {/* 17-20 */}
+                    <tr>
+                        <td>Cargo</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={cargo} 
+                                name="cargo" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Load</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={load} 
+                                name="load" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Stress</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={stress} 
+                                name="stress" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Fuel Type</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={fuelType} 
+                                name="fuelType" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                    </tr>
+
+                    {/* 21-24 */}
+                    <tr>
+                        <td>Fuel Capacity</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={fuelCapacity} 
+                                name="fuelCapacity" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Current Fuel</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={currentFuel} 
+                                name="currentFuel" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Econ</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={econ} 
+                                name="econ" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Idle</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={idle} 
+                                name="idle" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                    </tr>
+
+                    {/* 25-28 */}
+                    <tr>
+                        <td>L/T Profile</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={ltProfile} 
+                                name="ltProfile" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Setup Time</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={setupTime} 
+                                name="setupTime" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Cost</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={cost} 
+                                name="cost" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Maintenance</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={maintenance} 
+                                name="maintenance" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                    </tr>
+
+                    {/* 29-32 */}
+                    <tr>
+                        <td>Optempo</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={optempo} 
+                                name="optempo" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Sensors</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={sensors} 
+                                name="sensors" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>ECM</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={ecm} 
+                                name="ecm" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>ECCM</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={eccm} 
+                                name="eccm" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                    </tr>
+
+                    {/* 33-36 */}
+                    <tr>
+                        <td>ED</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={ed} 
+                                name="ed" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>ECD</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={ecd} 
+                                name="ecd" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        {/* <td>Chassis</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={chassis} 
+                                name="chassis" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td>
+                        <td>Point Value</td>
+                        <td>
+                            <input 
+                                className="mod-vehicle-input" 
+                                type="text" 
+                                value={pointValue} 
+                                name="pointValue" 
+                                onChange={handleChange} 
+                                onBlur={handleChange} 
+                                autocomplete="off">
+                            </input>
+                        </td> */}
+                    </tr>
+
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>
+            <div>Mods</div>
+            <TextareaAutosize 
+                className="vehicle-text" 
+                type="text" 
+                value={mods} 
+                name="mods" 
+                onChange={handleChange} 
+                onBlur={handleChange} 
+                maxRows={10}
+            />
+            <div>Weapons</div>
+            <TextareaAutosize 
+                className="vehicle-text" 
+                type="text" 
+                value={weapons} 
+                name="weapons" 
+                onChange={handleChange} 
+                onBlur={handleChange} 
+                maxRows={10}
+            />
+            <div>Notes</div>
+            <TextareaAutosize 
+                className="vehicle-text" 
+                type="text" 
+                value={notes} 
+                name="notes" 
+                onChange={handleChange} 
+                onBlur={handleChange} 
+                maxRows={10}
+            />
+            <div className="condition-monitor">
+                <ConditionTracker 
+                    conditionTracker={props.moddedVehicle[0].condition}
+                    updateCondition={props.updateCondition}
+                    trackerName="condition"
+                    index={0}
+                    stun={false}
+                    physical={true}
+                    size={'large'}
+                    stateComponent="moddedVehicle"
+                />
+            </div>
+            </div>
+        </div>
+    )
+}
+
+export default ModdedVehicle;
