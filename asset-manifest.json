@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6cddd564.chunk.css",
-    "main.js": "/static/js/main.21e39dbe.chunk.js",
-    "main.js.map": "/static/js/main.21e39dbe.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.bebb0c6a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.bebb0c6a.js.map",
-    "static/js/2.a1f25bcf.chunk.js": "/static/js/2.a1f25bcf.chunk.js",
-    "static/js/2.a1f25bcf.chunk.js.map": "/static/js/2.a1f25bcf.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2db39362c4b9a86219f9ea7e5bac9868.js": "/precache-manifest.2db39362c4b9a86219f9ea7e5bac9868.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.6cddd564.chunk.css.map": "/static/css/main.6cddd564.chunk.css.map",
-    "static/js/2.a1f25bcf.chunk.js.LICENSE.txt": "/static/js/2.a1f25bcf.chunk.js.LICENSE.txt",
-    "static/media/condition-tracker.styles.scss": "/static/media/stun_condition_monitor_alpha_whitetext.b3a73353.png"
+    "main.css": "/Shadowrun_3E_CS/static/css/main.760caddb.chunk.css",
+    "main.js": "/Shadowrun_3E_CS/static/js/main.d1d12552.chunk.js",
+    "main.js.map": "/Shadowrun_3E_CS/static/js/main.d1d12552.chunk.js.map",
+    "runtime-main.js": "/Shadowrun_3E_CS/static/js/runtime-main.11f617f6.js",
+    "runtime-main.js.map": "/Shadowrun_3E_CS/static/js/runtime-main.11f617f6.js.map",
+    "static/js/2.a1f25bcf.chunk.js": "/Shadowrun_3E_CS/static/js/2.a1f25bcf.chunk.js",
+    "static/js/2.a1f25bcf.chunk.js.map": "/Shadowrun_3E_CS/static/js/2.a1f25bcf.chunk.js.map",
+    "index.html": "/Shadowrun_3E_CS/index.html",
+    "precache-manifest.9b7f300612bd754305482676d442560b.js": "/Shadowrun_3E_CS/precache-manifest.9b7f300612bd754305482676d442560b.js",
+    "service-worker.js": "/Shadowrun_3E_CS/service-worker.js",
+    "static/css/main.760caddb.chunk.css.map": "/Shadowrun_3E_CS/static/css/main.760caddb.chunk.css.map",
+    "static/js/2.a1f25bcf.chunk.js.LICENSE.txt": "/Shadowrun_3E_CS/static/js/2.a1f25bcf.chunk.js.LICENSE.txt",
+    "static/media/condition-tracker.styles.scss": "/Shadowrun_3E_CS/static/media/stun_condition_monitor_alpha_whitetext.b3a73353.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bebb0c6a.js",
+    "static/js/runtime-main.11f617f6.js",
     "static/js/2.a1f25bcf.chunk.js",
-    "static/css/main.6cddd564.chunk.css",
-    "static/js/main.21e39dbe.chunk.js"
+    "static/css/main.760caddb.chunk.css",
+    "static/js/main.d1d12552.chunk.js"
   ]
 }
