@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b15bb2e4d9433a62114eccd67dd35e1e",
+    "revision": "a1015662fa64ad0487628166addee74d",
     "url": "/Shadowrun_3E_CS/index.html"
   },
   {
-    "revision": "2e091d957504bf2b3e3b",
-    "url": "/Shadowrun_3E_CS/static/css/main.760caddb.chunk.css"
+    "revision": "2f9ab6fcfd09b905b343",
+    "url": "/Shadowrun_3E_CS/static/css/main.a23668e4.chunk.css"
   },
   {
     "revision": "e53ea62017277147f686",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Shadowrun_3E_CS/static/js/2.a1f25bcf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2e091d957504bf2b3e3b",
-    "url": "/Shadowrun_3E_CS/static/js/main.d1d12552.chunk.js"
+    "revision": "2f9ab6fcfd09b905b343",
+    "url": "/Shadowrun_3E_CS/static/js/main.7ff6312c.chunk.js"
   },
   {
     "revision": "287cb19cbb06c842b160",

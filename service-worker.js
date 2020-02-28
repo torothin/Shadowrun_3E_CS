@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Shadowrun_3E_CS/precache-manifest.9b7f300612bd754305482676d442560b.js"
+  "/Shadowrun_3E_CS/precache-manifest.3db3aa93d3216286a92a8f3992cf6ab3.js"
 );
 
 self.addEventListener('message', (event) => {
