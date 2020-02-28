@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1015662fa64ad0487628166addee74d",
+    "revision": "5ba8f86c558e16955f479eb609066c7e",
     "url": "/Shadowrun_3E_CS/index.html"
   },
   {
-    "revision": "2f9ab6fcfd09b905b343",
-    "url": "/Shadowrun_3E_CS/static/css/main.a23668e4.chunk.css"
+    "revision": "8009a4e73e8837752bab",
+    "url": "/Shadowrun_3E_CS/static/css/main.a901fd0e.chunk.css"
   },
   {
     "revision": "e53ea62017277147f686",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Shadowrun_3E_CS/static/js/2.a1f25bcf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2f9ab6fcfd09b905b343",
+    "revision": "8009a4e73e8837752bab",
     "url": "/Shadowrun_3E_CS/static/js/main.7ff6312c.chunk.js"
   },
   {
